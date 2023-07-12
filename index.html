@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golomb Postulates</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Cargar src/scripts/script.js despues del DOM
+      window.addEventListener("DOMContentLoaded", () => {
+        const script = document.createElement("script");
+        script.type = "module";
+        script.src = "/src/scripts/script.js";
+        document.body.appendChild(script);
+      });
+    </script>
+    <script src="https://unpkg.com/autosize@4.0.2/dist/autosize.min.js"></script>
+  </body>
+</html>
